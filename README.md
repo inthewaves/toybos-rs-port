@@ -35,7 +35,7 @@ unconfined_u:object_r:admin_home_t:s0 target
 
 # KLEE
 
-There is experimental work to run KLEE via [Rust Verification Tools](https://project-oak.github.io).
+There is experimental work to run KLEE via [Rust Verification Tools](https://project-oak.github.io/rust-verification-tools/about.html).
 
 `kcachegrind` images were obtained by following https://project-oak.github.io/rust-verification-tools/2021/03/12/profiling-rust.html:
 
