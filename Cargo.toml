@@ -1,0 +1,23 @@
+[package]
+name = "toybox-rs-port"
+version = "0.1.0"
+edition = "2018"
+
+[[bin]]
+name = "ls"
+path = "src/ls.rs"
+
+[[bin]]
+name = "grep"
+path = "src/grep.rs"
+
+[dependencies]
+chrono = "0.4.19"
+libc = "0.2.102"
+nix = "^0.22.0"
+structopt = "0.3.23"
+selinux = { version = "^0.2.5", optional = true }
+verification-annotations = { path="/home/rust-verification-tools/verification-annotations", optional=true }
+
+[features]
+verifier-klee = ["verification-annotations", "verification-annotations/verifier-klee"]
